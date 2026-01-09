@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 import { PracticeComponent } from "./practice/practice.component";
+import { EmployeeComponent } from "./employee/employee.component";
 
 @Component({
 	selector: "app-root",
-	imports: [RouterOutlet, PracticeComponent],
+	imports: [RouterOutlet, PracticeComponent, EmployeeComponent],
 	// templateUrl: './app.component.html',
 	template: `
   <!-- <h1>
@@ -34,7 +35,8 @@ Decrement
     <button (click)="changeColor('error')">Error</button>
   </div>
 </div> -->
-<app-practice />
+<!-- <app-practice /> -->
+<app-employee />
   `,
 	// styleUrl: "./app.component.scss",
 	styles: [".success{color: green} .error{color: red}"],
